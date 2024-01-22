@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Caveat:wght@400;700&family=Lobster&family=Monoton&family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display+SC:ital,wght@0,400;0,700;1,700&family=Playfair+Display:ital,wght@0,400;0,700;1,700&family=Roboto:ital,wght@0,400;0,700;1,400;1,700&family=Source+Sans+Pro:ital,wght@0,400;0,700;1,700&family=Work+Sans:ital,wght@0,400;0,700;1,700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body styles */
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f8f8f8;
+    color: #333;
+}
+
+/* Header */
+header {
+    background: linear-gradient(45deg, #FF69B4, #FFD700);
+    /* Gradient of pink and yellow */
+    position: relative;
+}
+
+.hamburger-menu {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    font-size: 20px;
+    cursor: pointer;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+.nav-links a {
+    color: #333;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.nav-links a:hover {
+    color: #FF69B4;
+    /* Hover color in pink */
+}
+
+/* Hero section */
+.hero {
+    height: 400px;
+    background: linear-gradient(45deg, #FF69B4, #FFD700);
+    /* Gradient of pink and yellow */
+    position: relative;
+}
+
+/* Text section */
+.text-section {
+    padding: 50px;
+}
+
+h1 {
+    font-size: 32px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+p {
+    line-height: 1.5;
+    color: #555;
+}
+
+/* Testimonials */
+.testimonials {
+    padding: 50px;
+    background: linear-gradient(45deg, #FF69B4, #FFD700);
+    /* Gradient of pink and yellow */
+}
+
+h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.testimonial-items {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.testimonial-item {
+    width: 30%;
+    margin: 10px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.testimonial-item img {
+    width: 50px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+.testimonial-item p {
+    line-height: 1.5;
+    font-size: 14px;
+    color: #555;
+}
+
+.testimonial-item span {
+    display: block;
+    font-weight: bold;
+    color: #333;
+    margin-top: 10px;
+}
+
+/* Footer */
+footer {
+    background: linear-gradient(45deg, #FF69B4, #FFD700);
+    /* Gradient of pink and yellow */
+    padding: 20px;
+    text-align: center;
+    color: #fff;
+}
+
+/* Media queries for responsive layout */
+@media (max-width: 768px) {
+    .nav-links {
+        flex-direction: column;
+    }
+
+    .testimonial-items {
+        flex-direction: column;
+    }
+
+    .testimonial-item {
+        width: 100%;
+    }
+
+    h1,
+    h2 {
+        font-size: 24px;
+    }
+}
+
+@media (max-width: 480px) {
+    .hamburger-slider img {
+        width: 100%
+    }
+}
